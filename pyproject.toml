@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum"
+version = "0.1.0"
+description = "Exact zero-float pure-Q/Q(i) verification instruments for multi-slit Sorkin tomography, complex U(1) surgical severing, Z_4 Fourier quantum erasers, GKSL Zeno Schur complements, and Tomita-Takesaki modular obstructions."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+quantum = "quantum.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["quantum*"]
